@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6">
+    <main className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 sm:pt-0">
       {/* Hero */}
       <div className="text-center max-w-2xl">
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight mb-4">
