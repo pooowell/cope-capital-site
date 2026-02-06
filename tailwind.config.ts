@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         cope: {
-          green: "#00FF88",
+          blue: "#0088FF",
           dark: "#0a0a0a",
           card: "#111111",
           border: "#222222",
