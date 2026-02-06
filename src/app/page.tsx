@@ -39,8 +39,24 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Stats */}
+      <div className="flex gap-12 mt-20 text-center">
+        <div>
+          <div className="text-3xl font-bold text-cope-blue">890+</div>
+          <div className="text-zinc-500 text-sm mt-1">wallets tracked</div>
+        </div>
+        <div>
+          <div className="text-3xl font-bold text-cope-blue">2</div>
+          <div className="text-zinc-500 text-sm mt-1">chains</div>
+        </div>
+        <div>
+          <div className="text-3xl font-bold text-cope-blue">24/7</div>
+          <div className="text-zinc-500 text-sm mt-1">monitoring</div>
+        </div>
+      </div>
+
       {/* Signal Types */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-24 max-w-4xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 max-w-4xl w-full">
         <div className="bg-cope-card border border-cope-border rounded-xl p-6">
           <div className="text-2xl mb-3">🏆</div>
           <h3 className="font-semibold text-lg mb-2">Top Traders</h3>
@@ -64,25 +80,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Stats teaser */}
-      <div className="flex gap-12 mt-20 text-center">
-        <div>
-          <div className="text-3xl font-bold text-cope-blue">890+</div>
-          <div className="text-zinc-500 text-sm mt-1">wallets tracked</div>
-        </div>
-        <div>
-          <div className="text-3xl font-bold text-cope-blue">2</div>
-          <div className="text-zinc-500 text-sm mt-1">chains</div>
-        </div>
-        <div>
-          <div className="text-3xl font-bold text-cope-blue">24/7</div>
-          <div className="text-zinc-500 text-sm mt-1">monitoring</div>
-        </div>
-      </div>
-
       {/* Footer */}
       <footer className="mt-24 mb-8 text-zinc-600 text-sm">
-        powered by foxhound · built by degens, for degens
+        powered by foxhound
       </footer>
     </main>
   );
