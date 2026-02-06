@@ -3,10 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "cope.capital — smart wallet signals",
-  description: "On-chain alpha from tracked smart wallets. Convergence signals, wallet moves, and token alerts delivered to Telegram.",
+  description: "See what the best memecoin traders are buying before everyone else. 890+ wallets tracked. Free Telegram alerts.",
   openGraph: {
     title: "cope.capital",
-    description: "On-chain alpha from tracked smart wallets.",
+    description: "See what the best memecoin traders are buying before everyone else.",
     url: "https://cope.capital",
     siteName: "cope.capital",
     type: "website",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "cope.capital",
-    description: "On-chain alpha from tracked smart wallets.",
+    description: "See what the best memecoin traders are buying before everyone else.",
     creator: "@copedotcapital",
   },
 };

@@ -7,9 +7,9 @@ export default function Home() {
           cope<span className="text-cope-blue">.</span>capital
         </h1>
         <p className="text-zinc-400 text-lg sm:text-xl mb-12">
-          on-chain alpha from tracked smart wallets.
+          see what the best memecoin traders are buying
           <br />
-          convergence signals. wallet moves. token alerts.
+          before everyone else.
         </p>
 
         {/* CTA */}
@@ -42,24 +42,24 @@ export default function Home() {
       {/* Signal Types */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-24 max-w-4xl w-full">
         <div className="bg-cope-card border border-cope-border rounded-xl p-6">
+          <div className="text-2xl mb-3">🏆</div>
+          <h3 className="font-semibold text-lg mb-2">Top Traders</h3>
+          <p className="text-zinc-400 text-sm">
+            890+ wallets tracked and ranked by win rate, PnL, and profit factor.
+          </p>
+        </div>
+        <div className="bg-cope-card border border-cope-border rounded-xl p-6">
+          <div className="text-2xl mb-3">📡</div>
+          <h3 className="font-semibold text-lg mb-2">Live Feed</h3>
+          <p className="text-zinc-400 text-sm">
+            Real-time buys and sells from the best performing wallets as they happen.
+          </p>
+        </div>
+        <div className="bg-cope-card border border-cope-border rounded-xl p-6">
           <div className="text-2xl mb-3">🔀</div>
           <h3 className="font-semibold text-lg mb-2">Convergence</h3>
           <p className="text-zinc-400 text-sm">
-            Multiple tracked wallets buying the same token. The strongest signal.
-          </p>
-        </div>
-        <div className="bg-cope-card border border-cope-border rounded-xl p-6">
-          <div className="text-2xl mb-3">👀</div>
-          <h3 className="font-semibold text-lg mb-2">Wallet Moves</h3>
-          <p className="text-zinc-400 text-sm">
-            Real-time buys and sells from top performing wallets.
-          </p>
-        </div>
-        <div className="bg-cope-card border border-cope-border rounded-xl p-6">
-          <div className="text-2xl mb-3">🚨</div>
-          <h3 className="font-semibold text-lg mb-2">Token Alerts</h3>
-          <p className="text-zinc-400 text-sm">
-            Unusual activity detected across tracked wallets on a single token.
+            Multiple top traders buying the same token. The strongest signal.
           </p>
         </div>
       </div>
