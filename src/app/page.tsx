@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       {/* Stats */}
-      <div className="flex gap-12 mt-20 text-center">
+      <div className="flex gap-12 mt-12 text-center">
         <div>
           <div className="text-3xl font-bold text-cope-blue">890+</div>
           <div className="text-zinc-500 text-sm mt-1">wallets tracked</div>
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       {/* Signal Types */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 max-w-4xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 max-w-4xl w-full">
         <div className="bg-cope-card border border-cope-border rounded-xl p-6">
           <div className="text-2xl mb-3">🏆</div>
           <h3 className="font-semibold text-lg mb-2">Top Traders</h3>
