@@ -33,13 +33,13 @@ export default function Home() {
           {/* Hero */}
           <div className="text-center max-w-2xl">
             {/* ASCII Text Hero */}
-            <div className="relative h-48 sm:h-64 w-full mb-4">
+            <div className="relative h-64 sm:h-80 md:h-96 w-full mb-4">
               <ASCIIText
-                text="cope.capital"
+                text="cope capital"
                 textColor="#ffffff"
                 asciiFontSize={8}
-                textFontSize={180}
-                planeBaseHeight={8}
+                textFontSize={200}
+                planeBaseHeight={10}
                 enableWaves={true}
               />
             </div>
