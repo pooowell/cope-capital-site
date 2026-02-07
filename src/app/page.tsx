@@ -14,15 +14,21 @@ export default function Home() {
       {/* Fixed background - FaultyTerminal */}
       <div className="fixed inset-0 -z-10">
         <FaultyTerminal
-          tint="#52b4ed"
-          brightness={0.15}
-          pageLoadAnimation={true}
-          curvature={0}
+          tint="#ffffff"
+          scale={2}
+          digitSize={2}
+          timeScale={1.6}
+          noiseAmp={1}
+          brightness={0.6}
+          scanlineIntensity={0.5}
+          curvature={0.1}
+          mouseStrength={0.1}
           mouseReact={true}
+          pageLoadAnimation={true}
         />
       </div>
 
-      <ClickSpark sparkColor="#0088FF" sparkRadius={25} sparkCount={10}>
+      <ClickSpark sparkColor="#ffffff" sparkRadius={25} sparkCount={10}>
         <main className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 sm:pt-0">
           {/* Hero */}
           <div className="text-center max-w-2xl">
@@ -30,7 +36,7 @@ export default function Home() {
             <div className="relative h-48 sm:h-64 w-full mb-4">
               <ASCIIText
                 text="cope.capital"
-                textColor="#0088FF"
+                textColor="#ffffff"
                 asciiFontSize={8}
                 textFontSize={180}
                 planeBaseHeight={8}
@@ -49,7 +55,7 @@ export default function Home() {
                 href="https://t.me/copecapital"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-cope-blue text-black font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-lg"
+                className="inline-flex items-center justify-center gap-2 bg-white text-black font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-lg"
               >
                 <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
                   <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
@@ -60,7 +66,7 @@ export default function Home() {
                 href="https://x.com/copedotcapital"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 border border-cope-border text-white font-semibold px-8 py-4 rounded-lg hover:bg-cope-card transition-colors text-lg"
+                className="inline-flex items-center justify-center gap-2 border border-white/30 text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors text-lg"
               >
                 <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -73,22 +79,22 @@ export default function Home() {
           {/* Stats */}
           <div className="flex gap-12 mt-12 text-center">
             <div>
-              <div className="text-3xl font-bold text-cope-blue">890+</div>
+              <div className="text-3xl font-bold text-white">890+</div>
               <div className="text-zinc-500 text-sm mt-1">wallets tracked</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cope-blue">2</div>
+              <div className="text-3xl font-bold text-white">2</div>
               <div className="text-zinc-500 text-sm mt-1">chains</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-cope-blue">24/7</div>
+              <div className="text-3xl font-bold text-white">24/7</div>
               <div className="text-zinc-500 text-sm mt-1">monitoring</div>
             </div>
           </div>
 
           {/* Signal Types */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 max-w-4xl w-full">
-            <ElectricBorder color="#0088FF" borderRadius={12}>
+            <ElectricBorder color="#ffffff" borderRadius={12}>
               <div className="p-6 bg-black/50 backdrop-blur-sm rounded-xl">
                 <div className="text-2xl mb-3">🏆</div>
                 <h3 className="font-semibold text-lg mb-2">Top Traders</h3>
@@ -97,7 +103,7 @@ export default function Home() {
                 </p>
               </div>
             </ElectricBorder>
-            <ElectricBorder color="#0088FF" borderRadius={12}>
+            <ElectricBorder color="#ffffff" borderRadius={12}>
               <div className="p-6 bg-black/50 backdrop-blur-sm rounded-xl">
                 <div className="text-2xl mb-3">📡</div>
                 <h3 className="font-semibold text-lg mb-2">Live Feed</h3>
@@ -106,7 +112,7 @@ export default function Home() {
                 </p>
               </div>
             </ElectricBorder>
-            <ElectricBorder color="#0088FF" borderRadius={12}>
+            <ElectricBorder color="#ffffff" borderRadius={12}>
               <div className="p-6 bg-black/50 backdrop-blur-sm rounded-xl">
                 <div className="text-2xl mb-3">🔀</div>
                 <h3 className="font-semibold text-lg mb-2">Convergence</h3>
