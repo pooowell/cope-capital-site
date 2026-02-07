@@ -42,7 +42,7 @@ export default function Home() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
               <a
-                href="https://t.me/copecapital"
+                // href="https://t.me/copecapital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:opacity-90 transition-opacity text-base sm:text-lg"
@@ -53,7 +53,7 @@ export default function Home() {
                 Join Channel
               </a>
               <a
-                href="https://x.com/copedotcapital"
+                // href="https://x.com/copedotcapital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border border-white/30 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white/10 transition-colors text-base sm:text-lg"
