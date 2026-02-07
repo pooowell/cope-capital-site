@@ -3,11 +3,11 @@ import { GeistPixelSquare } from "geist/font/pixel";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "cope.capital — smart wallet signals",
-  description: "See what the best memecoin traders are buying before everyone else. 890+ wallets tracked. Free Telegram alerts.",
+  title: "cope capital",
+  description: "follow the winners. skip the noise. 1,000+ winning wallets tracked across Solana & Base.",
   openGraph: {
-    title: "cope.capital",
-    description: "See what the best memecoin traders are buying before everyone else.",
+    title: "cope capital",
+    description: "follow the winners. skip the noise.",
     url: "https://cope.capital",
     siteName: "cope.capital",
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "cope.capital",
-    description: "See what the best memecoin traders are buying before everyone else.",
+    description: "follow the winners. skip the noise.",
     creator: "@copedotcapital",
   },
 };
