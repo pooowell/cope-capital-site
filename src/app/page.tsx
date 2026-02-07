@@ -31,15 +31,15 @@ export default function Home() {
       <ClickSpark sparkColor="#ffffff" sparkRadius={25} sparkCount={10}>
         <main className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 sm:pt-0">
           {/* Hero */}
-          <div className="text-center w-full max-w-5xl">
+          <div className="text-center w-screen max-w-none -mx-6">
             {/* ASCII Text Hero */}
-            <div className="relative h-40 sm:h-56 md:h-72 w-full mb-4">
+            <div className="relative h-[50vh] sm:h-[60vh] w-full mb-4">
               <ASCIIText
                 text="cope capital"
                 textColor="#ffffff"
-                asciiFontSize={8}
-                textFontSize={100}
-                planeBaseHeight={5}
+                asciiFontSize={16}
+                textFontSize={500}
+                planeBaseHeight={12}
                 enableWaves={true}
               />
             </div>
