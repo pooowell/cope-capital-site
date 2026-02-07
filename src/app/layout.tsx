@@ -15,12 +15,14 @@ export const metadata: Metadata = {
     url: "https://cope.capital",
     siteName: "cope.capital",
     type: "website",
+    images: [{ url: "https://cope.capital/OG.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "cope.capital",
     description: "follow the winners. skip the noise.",
     creator: "@copedotcapital",
+    images: ["https://cope.capital/OG.png"],
   },
 };
 
