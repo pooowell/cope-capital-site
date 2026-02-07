@@ -3,6 +3,10 @@ import { GeistPixelSquare } from "geist/font/pixel";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png"
+  },
   title: "cope capital",
   description: "follow the winners. skip the noise. 1,000+ winning wallets tracked across Solana & Base.",
   openGraph: {
