@@ -6,26 +6,22 @@ import ElectricBorder from '@/components/ElectricBorder';
 import CountUp from '@/components/CountUp';
 
 // Dynamic imports for components that use window/WebGL
-const FaultyTerminal = dynamic(() => import('@/components/FaultyTerminal'), { ssr: false });
+const Dither = dynamic(() => import('@/components/Dither'), { ssr: false });
 const ASCIIText = dynamic(() => import('@/components/ASCIIText'), { ssr: false });
 
 export default function Home() {
   return (
     <>
-      {/* Fixed background - FaultyTerminal */}
+      {/* Fixed background - Dither */}
       <div className="fixed inset-0 -z-10">
-        <FaultyTerminal
-          tint="#ffffff"
-          scale={2}
-          digitSize={2}
-          timeScale={1.6}
-          noiseAmp={1}
-          brightness={0.6}
-          scanlineIntensity={0.5}
-          curvature={0.1}
-          mouseStrength={0.1}
-          mouseReact={true}
-          pageLoadAnimation={true}
+        <Dither
+          colorNum={10}
+          waveAmplitude={0.18}
+          waveSpeed={0.06}
+          waveFrequency={2.5}
+          enableMouseInteraction={false}
+          waveColor={[0.5, 0.5, 0.5]}
+          pixelSize={2}
         />
       </div>
 
