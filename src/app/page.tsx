@@ -32,7 +32,7 @@ export default function Home() {
       <ClickSpark sparkColor="#ffffff" sparkRadius={25} sparkCount={10}>
         <main className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 pt-8 sm:pt-0">
           {/* Hero */}
-          <div className="text-center w-full max-w-5xl">
+          <div className="text-center w-full max-w-5xl overflow-hidden">
             {/* ASCII Text Hero */}
             <div className="relative h-[25vh] sm:h-[40vh] md:h-[50vh] w-full mb-2 sm:mb-4">
               <ASCIIText
