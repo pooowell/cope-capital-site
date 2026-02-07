@@ -38,7 +38,7 @@ export default function Home() {
               <ASCIIText
                 text="COPE"
                 textColor="#ffffff"
-                asciiFontSize={12}
+                asciiFontSize={4}
                 textFontSize={100}
                 planeBaseHeight={14}
                 enableWaves={true}
