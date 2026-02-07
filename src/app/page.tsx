@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import ClickSpark from '@/components/ClickSpark';
 import ElectricBorder from '@/components/ElectricBorder';
+import CountUp from '@/components/CountUp';
 
 // Dynamic imports for components that use window/WebGL
 const FaultyTerminal = dynamic(() => import('@/components/FaultyTerminal'), { ssr: false });
@@ -33,13 +34,13 @@ export default function Home() {
           {/* Hero */}
           <div className="text-center w-screen max-w-none -mx-6">
             {/* ASCII Text Hero */}
-            <div className="relative h-[50vh] sm:h-[60vh] w-full mb-4">
+            <div className="relative h-[40vh] sm:h-[50vh] w-full mb-4">
               <ASCIIText
-                text="cope capital"
+                text="COPE"
                 textColor="#ffffff"
-                asciiFontSize={16}
-                textFontSize={500}
-                planeBaseHeight={12}
+                asciiFontSize={12}
+                textFontSize={600}
+                planeBaseHeight={14}
                 enableWaves={true}
               />
             </div>
@@ -79,11 +80,15 @@ export default function Home() {
           {/* Stats */}
           <div className="flex gap-12 mt-12 text-center">
             <div>
-              <div className="text-3xl font-bold text-white">890+</div>
+              <div className="text-3xl font-bold text-white">
+                <CountUp to={890} duration={2} separator="," />+
+              </div>
               <div className="text-zinc-500 text-sm mt-1">wallets tracked</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">2</div>
+              <div className="text-3xl font-bold text-white">
+                <CountUp to={2} duration={1.5} />
+              </div>
               <div className="text-zinc-500 text-sm mt-1">chains</div>
             </div>
             <div>
