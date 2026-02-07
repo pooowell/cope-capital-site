@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import ClickSpark from '@/components/ClickSpark';
 import ElectricBorder from '@/components/ElectricBorder';
@@ -7,9 +8,10 @@ import CountUp from '@/components/CountUp';
 
 // Dynamic imports for components that use window/WebGL
 const Dither = dynamic(() => import('@/components/Dither'), { ssr: false });
-const ASCIIText = dynamic(() => import('@/components/ASCIIText'), { ssr: false });
 
 export default function Home() {
+  const [walletsCountDone, setWalletsCountDone] = useState(false);
+
   return (
     <>
       {/* Fixed background - Dither */}
@@ -29,21 +31,12 @@ export default function Home() {
         <main className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 pt-8 sm:pt-0">
           {/* Hero */}
           <div className="text-center w-full max-w-5xl overflow-hidden">
-            {/* ASCII Text Hero */}
-            <div className="relative h-[25vh] sm:h-[40vh] md:h-[50vh] w-full mb-2 sm:mb-4">
-              <ASCIIText
-                text="COPE"
-                textColor="#ffffff"
-                asciiFontSize={4}
-                textFontSize={100}
-                planeBaseHeight={14}
-                enableWaves={true}
-              />
-            </div>
-            <p className="text-zinc-400 text-base sm:text-lg md:text-xl mb-8 sm:mb-12 px-2">
-              see what the best memecoin traders are buying
-              <br />
-              before everyone else.
+            {/* Hero Text */}
+            <h1 className="text-6xl sm:text-8xl md:text-9xl text-white mb-2 sm:mb-4">
+              cope capital
+            </h1>
+            <p className="text-white text-base sm:text-lg md:text-xl mb-8 sm:mb-12 px-2">
+              follow the winners. skip the noise.
             </p>
 
             {/* CTA */}
@@ -71,62 +64,63 @@ export default function Home() {
                 Follow on X
               </a>
             </div>
+            <p className="text-white/70 text-sm mt-6">
+              easily track the best traders on solana and base.
+            </p>
           </div>
 
           {/* Stats */}
           <div className="flex gap-8 sm:gap-12 mt-8 sm:mt-12 text-center">
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-white">
-                <CountUp to={890} duration={2} separator="," />+
+                <CountUp to={1000} duration={2} separator="," onEnd={() => setWalletsCountDone(true)} />
+                <span className={`transition-opacity duration-500 delay-200 ${walletsCountDone ? 'opacity-100' : 'opacity-0'}`}>+</span>
               </div>
-              <div className="text-zinc-500 text-xs sm:text-sm mt-1">wallets tracked</div>
+              <div className="text-white-500 text-xs sm:text-sm mt-1">wallets tracked</div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-white">
                 <CountUp to={2} duration={1.5} />
               </div>
-              <div className="text-zinc-500 text-xs sm:text-sm mt-1">chains</div>
+              <div className="text-white-500 text-xs sm:text-sm mt-1">chains</div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-white">24/7</div>
-              <div className="text-zinc-500 text-xs sm:text-sm mt-1">monitoring</div>
+              <div className="text-white-500 text-xs sm:text-sm mt-1">monitoring</div>
             </div>
           </div>
 
           {/* Signal Types */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 max-w-4xl w-full px-2 sm:px-0">
-            <ElectricBorder color="#ffffff" borderRadius={12} chaos={0.06}>
-              <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-xl">
-                <div className="text-2xl mb-2 sm:mb-3">🏆</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 max-w-4xl w-full px-2 sm:px-0 items-stretch">
+            <ElectricBorder color="#ffffff" borderRadius={12} chaos={0.01} className="h-full">
+              <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-[10px] h-full">
                 <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Top Traders</h3>
-                <p className="text-zinc-400 text-xs sm:text-sm">
-                  890+ wallets tracked and ranked by win rate, PnL, and profit factor.
+                <p className="text-white text-xs sm:text-sm">
+                  proven winners. ranked by real returns.
                 </p>
               </div>
             </ElectricBorder>
-            <ElectricBorder color="#ffffff" borderRadius={12} chaos={0.06}>
-              <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-xl">
-                <div className="text-2xl mb-2 sm:mb-3">📡</div>
+            <ElectricBorder color="#ffffff" borderRadius={12} chaos={0.01} className="h-full">
+              <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-[10px] h-full">
                 <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Live Feed</h3>
-                <p className="text-zinc-400 text-xs sm:text-sm">
-                  Real-time buys and sells from the best performing wallets as they happen.
+                <p className="text-white text-xs sm:text-sm">
+                  every buy and sell transaction. the moment it happens.
                 </p>
               </div>
             </ElectricBorder>
-            <ElectricBorder color="#ffffff" borderRadius={12} chaos={0.06}>
-              <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-xl">
-                <div className="text-2xl mb-2 sm:mb-3">🔀</div>
+            <ElectricBorder color="#ffffff" borderRadius={12} chaos={0.01} className="h-full">
+              <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-[10px] h-full">
                 <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Convergence</h3>
-                <p className="text-zinc-400 text-xs sm:text-sm">
-                  Multiple top traders buying the same token. The strongest signal.
+                <p className="text-white text-xs sm:text-sm">
+                  when the best traders align. pay attention.
                 </p>
               </div>
             </ElectricBorder>
           </div>
 
           {/* Footer */}
-          <footer className="mt-16 sm:mt-24 mb-6 sm:mb-8 text-zinc-600 text-xs sm:text-sm">
-            powered by foxhound
+          <footer className="mt-16 sm:mt-24 mb-6 sm:mb-8 text-white-600 text-xs sm:text-sm">
+            powered by foxhound 🦊
           </footer>
         </main>
       </ClickSpark>
