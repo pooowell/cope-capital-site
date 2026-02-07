@@ -104,7 +104,7 @@ export default function Home() {
               <div className="p-5 sm:p-6 bg-black/60 backdrop-blur-sm rounded-[10px] h-full">
                 <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Live Feed</h3>
                 <p className="text-white text-xs sm:text-sm">
-                  every buy and sell transaction. the moment it happens.
+                  every buy and sell. the moment it happens.
                 </p>
               </div>
             </ElectricBorder>
